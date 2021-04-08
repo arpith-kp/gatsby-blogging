@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_advanced_blog_system=self.webpackChunkgatsby_advanced_blog_system||[]).push([[2311],{74934:function(){Prism.languages.git={comment:/^#.*/m,deleted:/^[-–].*/m,inserted:/^\+.*/m,string:/("|')(?:\\.|(?!\1)[^\\\r\n])*\1/m,command:{pattern:/^.*\$ git .*$/m,inside:{parameter:/\s--?\w+/m}},coord:/^@@.*@@$/m,commit_sha1:/^commit \w{40}$/m}}}]);
+//# sourceMappingURL=2311-21086435c8a8803aac8d.js.map

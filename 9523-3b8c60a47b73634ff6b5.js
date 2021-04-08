@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_advanced_blog_system=self.webpackChunkgatsby_advanced_blog_system||[]).push([[9523],{69523:function(){var e;(e=Prism).languages.ignore={comment:/^#.*/m,entry:{pattern:/\S(?:.*(?:(?:\\ )|\S))?/,alias:"string",inside:{operator:/^!|\*\*?|\?/,regex:{pattern:/(^|[^\\])\[[^\[\]]*\]/,lookbehind:!0},punctuation:/\//}}},e.languages.gitignore=e.languages.ignore,e.languages.hgignore=e.languages.ignore,e.languages.npmignore=e.languages.ignore}}]);
+//# sourceMappingURL=9523-3b8c60a47b73634ff6b5.js.map

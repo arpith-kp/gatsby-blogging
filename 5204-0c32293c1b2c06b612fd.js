@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_advanced_blog_system=self.webpackChunkgatsby_advanced_blog_system||[]).push([[5204],{45204:function(){!function(a){function e(e,n){a.languages[e]&&a.languages.insertBefore(e,"comment",{"doc-comment":n})}var n=a.languages.markup.tag,s={pattern:/\/\/\/.*/,greedy:!0,alias:"comment",inside:{tag:n}},t={pattern:/'''.*/,greedy:!0,alias:"comment",inside:{tag:n}};e("csharp",s),e("fsharp",s),e("vbnet",t)}(Prism)}}]);
+//# sourceMappingURL=5204-0c32293c1b2c06b612fd.js.map
