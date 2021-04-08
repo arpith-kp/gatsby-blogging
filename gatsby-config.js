@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "My personal blog",
+    title: "Programmers Blog",
     titleTemplate: "%s · Blog",
-    description: "Nostrud est duis proident ut dolore ipsum tempor Lorem.",
-    author: "danilowoz",
-    twitterUsername: "@danilowoz",
+    description: "Programmer articles",
+    author: "arpith"
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -29,7 +28,7 @@ module.exports = {
             `gatsby-remark-images`,
             {
                 resolve: 'gatsby-remark-prismjs-title',
-            },      
+            },
             {
                 resolve: `gatsby-remark-prismjs`,
                 options: {
@@ -95,7 +94,7 @@ module.exports = {
                   escapeEntities: {},
                 },
               },
-            
+
           ],
       },
     },
