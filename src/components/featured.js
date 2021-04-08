@@ -7,7 +7,7 @@ import * as S from "../components/styles.css"
 import ConcatWords from "../utils/ConcatWords"
 import formatDate from "../utils/formatDate"
 
-const BlogFeatured = () => {
+const BlogFeatureds = () => {
   const { markdownRemark } = useStaticQuery(query)
   const imageSource = markdownRemark.frontmatter.image.childImageSharp.fluid.src
 
@@ -57,7 +57,7 @@ const BlogFeatured = () => {
   )
 }
 
-export default BlogFeatured
+export default BlogFeatureds
 
 const query = graphql`
   query BlogFeatured {
@@ -71,13 +71,6 @@ const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         author
         category
-        image {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
       }
     }
   }

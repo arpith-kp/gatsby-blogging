@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Pagination from "../components/pagination"
 import Featured from "../components/featured"
 import renderList from "../components/renderList"
+import Navbar from "../components/Navbar/Navbar"
 
 const BlogPostList = ({ data, pageContext }) => {
   const { allMarkdownRemark } = data
@@ -14,7 +15,6 @@ const BlogPostList = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Cell xs={12}>{currentPage === 1 && <Featured />}</Cell>
 
       <Container>
         <Row>{allMarkdownRemark.edges.map(renderList)}</Row>
@@ -45,13 +45,7 @@ export const query = graphql`
             date
             author
             category
-            image {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
+            
           }
         }
       }

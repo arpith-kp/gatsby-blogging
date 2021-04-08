@@ -8,18 +8,13 @@ import ConcatWords from "../utils/ConcatWords"
 import formatDate from "../utils/formatDate"
 
 const renderList = ({ node }) => {
-  const imageSource = node.frontmatter.image.childImageSharp.fluid.src
 
   return (
     <Cell xs={12} key={node.fields.slug}>
       <S.Article>
         <Row>
           <Cell xs={3}>
-            <S.Image>
-              <Link to={node.fields.slug}>
-                <img src={imageSource} alt={node.frontmatter.title} />
-              </Link>
-            </S.Image>
+            
           </Cell>
 
           <Cell xs={9}>

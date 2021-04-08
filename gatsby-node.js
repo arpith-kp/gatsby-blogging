@@ -12,31 +12,24 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     query blogPosts {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
         edges {
-          node {
+            node {
+            html
             fields {
-              slug
+                slug
             }
             frontmatter {
-              title
-              date
-              author
-              category
-              featured
-              image {
-                childImageSharp {
-                  fluid {
-                    src
-                  }
-                }
-              }
+                title
+                date
+                author
+                category
+                featured
             }
-            html
-          }
+            }
         }
-      }
-    }
+        }
+    }    
   `).then(result => {
     if (result.errors) {
       console.error(result.errors)

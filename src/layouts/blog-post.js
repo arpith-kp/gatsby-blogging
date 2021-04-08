@@ -13,14 +13,13 @@ import formatDate from "../utils/formatDate"
 const BlogPost = ({ data, pageContext }) => {
   const { markdownRemark } = data
   const { prev, next } = pageContext
-  const imageSource = markdownRemark.frontmatter.image.childImageSharp.fluid.src
 
   return (
     <Layout>
       <Seo title={markdownRemark.frontmatter.title} />
 
       <Container>
-        <img src={imageSource} alt={markdownRemark.frontmatter.title} />
+        
 
         <S.Author>
           By{" "}
@@ -89,13 +88,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         author
         category
-        image {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
+        
       }
     }
   }

@@ -3,8 +3,3 @@
 
 # Advanced blog system in Gatsby
 
-Create a complete blog from scratch in Gatsby with pagination, categories, featured posts, author, SEO and navigation.
-
-**[Read full article](https://danilowoz.com/blog/advanced-blog-system-in-gatsby)**
-
-Check it out the [demo](https://gatsby-advanced-blog-system.danilowoz.now.sh/).

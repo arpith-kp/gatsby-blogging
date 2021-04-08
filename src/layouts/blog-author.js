@@ -64,13 +64,7 @@ export const query = graphql`
             date
             author
             category
-            image {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
+        
           }
         }
       }
